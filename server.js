@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const http = require('http');
 const { loadPlanetData } = require('@src/planets/planet.models');
 const app = require('@src/app');
-const { getConfig } = require('../config/config.env');
+const { getConfig } = require('./config/config.env');
 
 const URL = process.env.NODE_ENV !== 'production' ? 'localhost' : getConfig('URL');
 const PORT = getConfig('PORT') || 8000;
