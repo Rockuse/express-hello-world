@@ -1,4 +1,4 @@
-# Cyclic - Express Hello World - [![RUN APP HERE](https://p1.hiclipart.com/preview/1006/392/897/metronome-blue-play-button-icon-png-clipart.jpg)](https://weak-tan-walkingstick-shoe.cyclic.app)
+# Cyclic - Express Hello World - https://weak-tan-walkingstick-shoe.cyclic.app
 
 This is a basic starter Expressjs app with:
 
