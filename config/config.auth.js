@@ -1,4 +1,5 @@
 const { resolve } = require('path');
+const { getConfig } = require('./config.env');
 
 const AuthMethod = {
   checkLoggedIn: (req, res, next) => {
@@ -16,8 +17,8 @@ const AuthMethod = {
 
 const AUTH_OPTIONS = {
   callbackURL: '/google/callback',
-  clientID: process.env.CLIENT_ID,
-  clientSecret: process.env.CLIENT_SECRET,
+  clientID: getConfig('CLIENT_ID'),
+  clientSecret: getConfig('CLIENT_SECRET'),
 };
 const AuthRouter = (router, passport) => {
   router.get('/secret', (req, res) => {
